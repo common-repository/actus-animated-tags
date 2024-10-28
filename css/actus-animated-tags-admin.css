@@ -1,0 +1,578 @@
+
+.actus-settings * { box-sizing: border-box; }
+
+.actus-settings h2 { opacity: 0.5; position: absolute; }
+
+.actus-anit-seperator-1 { height: 16px; }
+
+.anit-flex { display: flex; }
+.anit-flex-wrap { display: flex; flex-flow: row wrap; }
+
+.actus-settings-header {
+    width: 100%;
+    height: 64px;
+    position: relative;
+    background: hsl(343, 50%, 55%);
+} 
+.actus-settings-header h1 {
+    padding: 16px;
+    padding-left: 64px;
+    color: white;
+    float: right;
+}
+.actus-settings-header img {
+    width: auto;
+    height: 64px;
+    padding: 8px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.actus-settings-header .actus-anit-title {
+    left: initial;
+    right: 0;
+}
+
+.actus-settings-channel,
+.actus-settings-info {
+    width: 100%;
+    padding: 8px 16px;
+    margin-top: 4px;
+    position: relative;
+    background: hsla(53, 0%, 0%, 0.15);
+}
+.actus-settings-info p {
+    margin: 0;
+    color: white;
+}
+.actus-settings-info p b { color: hsl(343, 50%, 55%); font-weight: 700; }
+
+.actus-settings-info-icon {
+    margin-left: -4px;
+    opacity: 0.5;
+    float: left;
+}
+.actus-settings-info-icon img {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+.actus-settings-info-text {
+    width: calc(100% - 56px);
+    float: left;
+}
+
+
+.actus-settings-panel {
+    width: 100%;
+    min-height: 128px;
+    padding: 16px;
+    margin-top: 4px;
+    position: relative;
+    background: white;
+}
+
+
+.actus-settings-footer {
+    width: 100%;
+    height: 32px;
+    margin-top: 4px;
+    position: relative;
+    background: hsl(343, 50%, 55%);
+    color: white;
+}
+
+
+.actus-settings-footer .actus {
+    padding: 8px;
+    float: left;
+    opacity: 0.5;
+}
+.actus-settings-footer .actus-sic {
+    padding: 8px;
+    float: right;
+    opacity: 0.5;
+}
+
+.actus-settings-footer .actus-sic a,
+.actus-settings-footer .actus a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+.actus-settings-footer .actus-sic a:visited,
+.actus-settings-footer .actus a:visited {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.A-flex-wrap { display: flex; flex-flow: row wrap; }
+
+.actus-anit-styles {
+	flex: 0 0 auto;
+	width: 250px;
+	margin-right: 4px;
+    padding: 16px;
+	background: white;
+}
+.actus-anit-styles h2 { position: relative; }
+.actus-settings-panel-preview {
+	flex: 1;
+	width: 100%;
+}
+.anit-styles-list {
+	padding: 8px 0 16px;
+	border-top: 2px dotted hsla(0, 0%, 0%, 0.2);
+	border-bottom: 2px dotted hsla(0, 0%, 0%, 0.2);
+}
+
+.anit-styles-list .A-item {
+	padding: 4px;
+	font: 700 18px sans-serif;
+	cursor: pointer;
+}
+.anit-styles-list .A-item:hover,
+.anit-styles-list .A-item.active {
+	background: hsl(0, 0%, 80%);
+	color: white;
+}
+.anit-add-style {
+	display: inline-block;
+	margin-top: 8px;
+	padding: 6px 12px;
+	background: hsl(343, 50%, 55%);
+	color: white;
+	font-weight: 700;
+	font-size: 14px;
+	cursor: pointer;
+}
+.anit-add-style:hover { background: black; }
+
+
+
+
+.actus-anit-preview {
+    width: 80%;
+    margin-left: 10%;
+    background-color: hsla(0, 0%, 0%, 0.15);
+	pointer-events: none;
+}
+
+X.actus-anit-add-image {
+    position: relative;
+    width: 74px;
+    height: 74px;
+    padding: 6px 0px;
+    margin-bottom: 8px;
+    text-align: center;
+    background: hsla(168, 37%, 39%, 1);
+    color: white;
+    cursor: pointer;
+    float: right;
+    opacity: 0.5;
+}
+X.actus-anit-add-image .dashicons {
+    width: 48px;
+    height: 40px;
+    font-size: 48px;
+}
+X.actus-anit-add-image p {
+    margin: 4px 2px;
+    font-size: 11px;
+}
+
+.actus-anit-add-image img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	background: hsl(0, 0%, 90%);
+}
+
+
+.A-color-pick {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	padding: 26px 14px 0;
+	background: hsl(0, 0%, 90%);
+    z-index: 9999;
+}
+.actus-anit-options .wp-picker-container {
+	text-align: left;
+    z-index: 9999;
+}
+.actus-anit-options .wp-picker-container .wp-color-result.button {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+	height: 100%;
+    padding: 0 16px;
+	border: 0;
+	outline: 0;
+}
+.actus-anit-options .wp-picker-container.wp-picker-active .wp-color-result.button { height: 50%; }
+
+.actus-anit-options .wp-color-result-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font: 400 14px sans-serif;
+}
+.actus-anit-options .wp-picker-active .wp-color-result-text {
+    display: none;
+}
+
+.actus-anit-options .wp-picker-open +.wp-picker-input-wrap {
+	position: relative;
+	margin: 51px 0 4px;
+	background: #f2f2f2;
+	z-index: 9;
+}
+
+.actus-anit-option-terms-color .wp-picker-container .wp-color-result.button {
+	width: 86%;
+	left: 7%;
+	top: 7%;
+	height: 50%;
+}
+X.actus-anit-option-terms-color .wp-picker-container.wp-picker-active .wp-color-result.button { height: 30%; }
+.actus-anit-option-terms-color .wp-color-result-text { display: none; }
+.actus-anit-option-terms-color > .label {
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+	width: 100%;
+}
+
+
+.actus-anit-shortcode {
+    width: 80%;
+	padding: 8px;
+	margin: 6px 0 0 10%;
+	font: 700 16px monospace;
+	background: hsl(0, 0%, 92%);
+}
+
+.actus-anit-options {
+	display: flex;
+	flex-flow: row wrap;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.actus-anit-option {
+	position: relative;
+    width: 128px;
+    height: 96px;
+    margin-right: 8px;
+	margin-bottom: 6px;
+    padding: 8px;
+    background: hsla(0, 0%, 0%, 0.05);
+}
+.actus-anit-option > .actus-anit-input {
+    width: 100%;
+    height: 52px;
+    padding: 4px 0;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    background: hsla(53, 100%, 100%, 0);
+    color: hsl(343, 50%, 55%);
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+}
+
+.actus-anit-option > .actus-anit-input[type="checkbox"] {
+	-webkit-appearance: none;
+	appearance: none;
+    width: 32px;
+    height: 32px;
+	margin: 10px 0;
+	border: 3px solid hsl(343, 50%, 55%);
+	font-size: 64px;
+}
+.actus-anit-option > .actus-anit-input[type="checkbox"]:before {
+    width: 32px;
+    height: 32px;
+}
+.actus-anit-option > .label {
+    width: 100%;
+    padding: 4px 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 0.25;
+}
+.actus-anit-option-backg .label { padding: 0 4px 8px; }
+
+.actus-anit-option-backg .actus-anit-thumbs {
+	display: flex;
+	flex-flow: row wrap;
+    width: calc(100% + 4px);
+    height: auto;
+    margin-bottom: 4px;
+}
+
+.actus-anit-option-backg .actus-anit-thumb {
+    position: relative;
+	flex: 1;
+    min-width: calc(14.28% - 4px);
+    min-width: 160px;
+    height: 100px;
+    margin-right: 4px;
+	margin-bottom: 4px;
+    background: hsla(53, 100%, 0%, 0.1);
+    cursor: pointer;
+    float: left;
+}
+.actus-anit-option-backg .actus-anit-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.actus-anit-option-backg .actus-anit-thumb.selected {
+    border: 8px solid hsl(343, 50%, 55%);
+}
+.actus-anit-option-backg .actus-anit-thumb[alt="random"] img {
+    object-fit: contain;
+    background: #1fad85;
+}
+
+
+.actus-anit-option-backg .actus-anit-thumb[alt="random"],
+.actus-anit-option-backg .actus-anit-thumb[alt="library"],
+.actus-anit-option-backg .actus-anit-thumb[alt="color"] {
+	display: flex;
+	flex-flow: column;
+	place-content: center;
+	align-items: center;
+	padding: 8px;
+    background: #1fad85;
+    background: hsl(343, 50%, 55%);
+	color: white;
+	font-weight: 700;
+	font-size: 16px;
+	text-align: center;
+}
+.actus-anit-option-backg .actus-anit-thumb[alt="random"] span,
+.actus-anit-option-backg .actus-anit-thumb[alt="library"] span,
+.actus-anit-option-backg .actus-anit-thumb[alt="color"] > span {
+	font-size: 36px;
+    width: 36px;
+    height: 36px;
+	margin-bottom: 4px;
+	pointer-events: none;
+}
+.actus-anit-option-backg .actus-anit-thumb[alt="random"]:hover,
+.actus-anit-option-backg .actus-anit-thumb[alt="library"]:hover,
+.actus-anit-option-backg .actus-anit-thumb[alt="color"]:hover {
+    background: #1fad85;
+}
+
+
+.actus-anit-option-name {
+	flex: 1;
+    width: auto;
+    min-width: calc(100% - 552px);
+    min-width: 450px;
+}
+.actus-anit-option-clickable {
+	margin-bottom: 6px;
+	text-align: center;
+}
+.actus-anit-option-terms-color {
+	margin-bottom: 6px;
+	text-align: center;
+    z-index: 9999;
+}
+.actus-anit-option-backg {
+    width: 100%;
+	height: auto;
+}
+
+.actus-anit-option.actus-anit-option-tax {
+	flex: 1;
+	width: 100%;
+    width: auto;
+	height: auto;
+}
+.actus-anit-option-tax .anit-flex { place-content: center; }
+.actus-anit-option-tax .row {
+	margin: 4px;
+	padding: 6px 12px 12px;
+	font-size: 20px;
+	cursor: pointer;
+}
+.actus-anit-option-tax .row.selected,
+.actus-anit-option-tax .row:hover {
+	background: hsl(0, 0%, 70%);
+	color: white;
+}
+
+
+
+
+
+.actus-settings-channel {
+    background: white;
+    text-align: center;
+}
+
+
+
+
+
+.actus-save {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 16px;
+	padding: 6px 12px 8px;
+	background: #1fad85;
+	color: white;
+	font-weight: 700;
+	font-size: 20px;
+	cursor: pointer;
+}
+.actus-saving {
+    display: none;
+    position: absolute;
+    top: 56px;
+    left: 16px;
+    opacity: 0.1;
+}
+.actus-saving img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 2000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 2000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 2000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-transition: rotate(3600deg);
+}
+
+
+
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+
+
+@media only screen and (max-width: 782px) {
+    
+    .actus-anit-seperator-1 { height: 8px; }
+    .actus-settings h2 { display: none }
+    .actus-anit-preview {
+        width: 100%;
+        margin-left: 0;
+    }
+    .actus-anit-options {
+        width: 100%;
+        margin-left: 0;
+    }
+    .actus-settings-info p {
+        margin: 4px 0 8px;
+        font-size: 16px;
+    }
+    .actus-settings-info1 { display: none }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .actus-anit-seperator-1 { height: 4px; }
+    .actus-settings-panel-options .actus-anit-seperator-1:nth-child(3) { height: 0px; }
+    
+    .actus-settings-header .actus-anit-title {
+        width: 280px;
+        height: auto;
+        top: 6px;
+    }
+    .actus-settings-info { margin-top: 0 }
+    .actus-settings-info p {
+        font-size: 16px;
+        color: hsla(0, 0%, 0%, 0.75);
+    }
+    
+    .actus-settings-info-icon { margin-left: -8px; }
+    .actus-settings-info-icon img {
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+    }
+    .actus-settings-info-text {
+        width: calc(100% - 34px);
+        float: left;
+    }
+    
+    .actus-settings-panel { margin: 0;  padding: 0 }
+    .actus-settings h2 { display: none }
+    .actus-anit-preview {
+        width: 100%;
+        margin-left: 0;
+    }
+    .actus-anit-options {
+        width: 100%;
+        margin-left: 0;
+    }
+    .actus-anit-option {
+        width: calc(50% - 2px);
+        margin-right: 2px;
+    }
+    .actus-anit-option:nth-child(2) {
+        width: calc(50% - 2px);
+        margin-left: 2px;
+        margin-right: 0;
+    }
+    .actus-anit-option.actus-anit-option-backg {
+        width: 100%;
+        margin-top: 4px;
+        margin-right: 0;
+    }
+    .actus-settings-footer { font-size: 12px }
+    .actus-saving {
+        top: 32px;
+        left: calc(50% - 32px);
+    }
+}
+
+ 
+
+@media only screen and (max-width: 340px) {
+    
+    .actus-settings-header .actus-anit-title {
+        width: 240px;
+        height: auto;
+        top: 8px;
+    }
+    
+}

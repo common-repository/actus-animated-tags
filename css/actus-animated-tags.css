@@ -1,0 +1,30 @@
+.actus-anit * { box-sizing: border-box; }
+
+.actus-anit-cloud {
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.actus-anit-cloud .actus-animated-tag {
+	display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    line-height: 0.8;
+    font-size: 30px;
+    font-weight: 900;
+	font-family: sans-serif;
+    white-space: nowrap;
+	text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+}
+.actus-anit-cloud .actus-animated-tag:hover { opacity: 1 !important; }
+
+.actus-clear { clear: both; }
+
+/****************************************** SETTINGS */ 
